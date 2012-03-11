@@ -1,7 +1,24 @@
 # FunkyAccessor
 
-TODO: Write a gem description
+```ruby
 
+class Egg
+  extend FunkyAccessor
+
+  funky_accessor :cheese, :tuna
+end
+
+
+egg = Egg.new
+
+egg.tuna
+#=> nil
+egg.tuna 1; egg.tuna.should == 1 }
+#=> 1
+egg.tuna {"evaluate this block plz"}
+#=> "evaluate this block plz"
+
+```
 ## Installation
 
 Add this line to your application's Gemfile:
