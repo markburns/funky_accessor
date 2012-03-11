@@ -13,8 +13,10 @@ egg = Egg.new
 
 egg.tuna
 #=> nil
-egg.tuna 1; egg.tuna.should == 1 }
+
+egg.tuna 1
 #=> 1
+
 egg.tuna {"evaluate this block plz"}
 #=> "evaluate this block plz"
 
