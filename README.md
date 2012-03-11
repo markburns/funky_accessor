@@ -35,10 +35,6 @@ Or install it yourself as:
 
     $ gem install funky_accessor
 
-## Usage
-
-TODO: Write usage instructions here
-
 ## Contributing
 
 1. Fork it
