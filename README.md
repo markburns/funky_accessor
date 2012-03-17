@@ -5,20 +5,20 @@
 class Egg
   extend FunkyAccessor
 
-  funky_accessor :cheese, :tuna
+  funky_accessor :chicken
 end
 
 
 egg = Egg.new
 
-egg.tuna
+egg.chicken
 #=> nil
 
-egg.tuna 1
+egg.chicken "an egg"
 #=> 1
 
-egg.tuna {"evaluate this block plz"}
-#=> "evaluate this block plz"
+egg.chicken {|myself| "I used to be #{myself.chicken}, but now I am this sentence"}
+#=> "I used to be an egg, but now I am this sentence"
 
 ```
 ## Installation
