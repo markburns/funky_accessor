@@ -15,9 +15,15 @@ egg.chicken
 #=> nil
 
 egg.chicken "an egg"
-#=> 1
+#=> "an egg"
+
+egg.chicken 
+#=> "an egg"
 
 egg.chicken {|myself| "I used to be #{myself.chicken}, but now I am this sentence"}
+#=> "I used to be an egg, but now I am this sentence"
+
+egg.chicken
 #=> "I used to be an egg, but now I am this sentence"
 
 ```
